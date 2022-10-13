@@ -1,0 +1,21 @@
+.test {
+  color: brown;
+  background-color: purple;
+  font-size: 64px;
+  border: 1px solid yellow;
+}
+
+ul {
+  list-style: none;
+}
+
+.navbar li a {
+  background-color: orange;
+  color: white;
+  margin: 5px;
+}
+
+.navbar li a:hover {
+  color: yellow;
+}
+/*# sourceMappingURL=sass_mixin_kavrami.css.map */

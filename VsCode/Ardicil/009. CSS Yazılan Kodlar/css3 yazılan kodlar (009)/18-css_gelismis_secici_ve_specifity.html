@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Advance</title>
+    <style>
+        body{
+            font-size: 2rem;
+        }
+        /*Element seçici*/
+        h3{
+
+        }
+
+        #h2ID{
+            background-color: red;
+        }
+        .paragrafSinif{
+            color:green;
+        }
+
+        /* span, p{
+            color:blue;
+        } */
+
+        /*div elementi içindeki tüm spanlar seçildi*/
+        div span{
+           color:purple; 
+        }
+
+        /*divin direk çocugu olan spanleri seçer*/
+        div > span{
+            color:red;
+        }
+
+        /* div'in kardeşi olan ve div'den sonra gelen tüm p'ler seçilir'*/
+        div ~ p{
+            background-color: blue;
+        }
+
+        /*div elementinden hemen sonra gelen kardeş elemnt olan p'yi seçer'*/
+        div + p{
+            background-color: green;
+        }
+
+        p + div{
+            background-color: brown;
+        }
+        h2.h2Sinif{
+           background-color: red; 
+        }
+
+        h2:not(.h2Sinif):not(.h222){
+            background-color: blue;
+        }
+
+        input[type="text"]{
+            background-color:red;
+        }
+       
+        input:not(:checked){
+            background-color:red;
+        }
+
+        input[type]{
+            background-color:green;
+        }
+
+    /*içinde rm geçenleri seç*/
+        input[data-margin*="rm"]{
+            background-color: yellow;
+        }
+
+        /*em ile başlayanları seç*/
+        input[data-margin^="em"]{
+            background-color: purple;
+        }
+
+          /*em ile bitenleri seç*/
+          input[data-margin$="ee"]{
+            background-color: brown;
+        }
+
+     
+       
+
+    </style>
+   
+
+    
+</head>
+<body>
+    <input type="checkbox">
+    <input data-margin="emreeeee" type="text">
+    <h2 class="h2Sinif" >Başlık H2</h2>
+    <h2>Başlık H2</h2>
+    <h2>Başlık H2</h2>
+    <p class="paragrafSinif">Paragraf 1</p>
+    <p>Paragraf 2</p>
+    <div>
+        <p>Bu etkilenmeyecek</p>
+        <span>
+            Dışardaki Span Elementi
+            <span >Icerdeki Span Elementi</span>
+        </span>
+        <p>Bu etkilenecek</p>
+        <span>2. span</span>
+    </div>
+    <p>Paragraf 3</p>
+    <p>Paragraf 4</p>
+    <div>Div 2</div>
+    <div>Div 3</div>
+    <p>Paragraf 5</p>
+</body>
+</html>

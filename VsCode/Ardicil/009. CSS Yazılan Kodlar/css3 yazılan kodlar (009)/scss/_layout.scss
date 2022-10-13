@@ -1,0 +1,25 @@
+
+body{
+    background-color: $ana-renk;
+}
+
+@mixin buton-temel{
+    border-radius: 2px;
+    margin:5px;
+}
+
+%button-base{
+    border-radius: 2px;
+    margin:5px;
+}
+
+.menu-button{
+    @extend %button-base;
+    color:purple;
+}
+
+.submit-button{
+    @extend %button-base;
+    @extend .menu-button;
+    font-size:1rem;
+}

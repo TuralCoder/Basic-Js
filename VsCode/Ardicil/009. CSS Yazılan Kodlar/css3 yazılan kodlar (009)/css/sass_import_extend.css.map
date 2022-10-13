@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AECA,AAAA,IAAI,CAAA;EACA,gBAAgB,EDFV,MAAM;CCGf;;AAYD,AALA,YAKY,EAKZ,cAAc,CAVF;EACR,aAAa,EAAE,GAAG;EAClB,MAAM,EAAC,GAAG;CACb;;AAED,AAAA,YAAY,EAKZ,cAAc,CALF;EAER,KAAK,EAAC,MAAM;CACf;;AAED,AAAA,cAAc,CAAA;EAGV,SAAS,EAAC,IAAI;CACjB",
+    "sources": [
+        "../scss/sass_import_extend.scss",
+        "../scss/_degiskenler.scss",
+        "../scss/_layout.scss"
+    ],
+    "names": [],
+    "file": "sass_import_extend.css"
+}

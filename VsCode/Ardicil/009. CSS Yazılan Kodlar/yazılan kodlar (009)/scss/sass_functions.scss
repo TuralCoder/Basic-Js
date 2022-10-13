@@ -1,0 +1,25 @@
+$bg-color:#0ac;
+$accent-color:invert($bg-color,50);
+
+@function ikiyeKatla($deger){
+    @return $deger*2;
+}
+
+@function textRenginiAyarla($arkaPlanRengi){
+
+    @if(lightness($arkaPlanRengi) > 70){
+        @return #333;
+    }
+    @else{
+        @return white;
+    }
+}
+
+.div{
+    color:textRenginiAyarla($bg-color);
+    height: 300px;
+    width: ikiyeKatla(300px);
+    background-color: $accent-color;
+    font-size: ikiyeKatla(2rem);
+}
+

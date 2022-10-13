@@ -1,0 +1,40 @@
+@BASE_URL = http://localhost:3000/api
+@TOKEN = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWMzZTVhMjYxOGE2YTI4N2MwNGQzNWUiLCJpYXQiOjE2MDI2NDkyNzgsImV4cCI6MTYwMjkwODQ3OH0.VX6A_Lng6cW_IqKhB5qc8uc14OtewZP1PQvBk6xe8iw
+
+
+GET {{BASE_URL}}/gorevler
+Authorization: {{TOKEN}}
+
+###
+GET {{BASE_URL}}/users
+Authorization: {{TOKEN}}
+
+###
+POST {{BASE_URL}}/gorevler
+Authorization: {{TOKEN}}
+Content-Type: application/json
+
+{
+    "tanim":"Yeni görev"
+}
+###
+POST {{BASE_URL}}/users
+Content-Type: application/json
+
+{
+    "isim":"test",
+    "email" : "test@test.com",
+    "userName" : "testtest",
+    "sifre" : "123456"
+}
+
+###
+POST {{BASE_URL}}/users/giris
+Content-Type: application/json
+
+{
+    "email" : "test@test.com",
+    "sifre" : "123456"
+}
+
+

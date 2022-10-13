@@ -1,0 +1,1 @@
+{"version":3,"sources":["scss\\style.scss"],"names":[],"mappings":"AAEA,KACI","file":"style.b91cb6f2.css","sourceRoot":"..\\src","sourcesContent":["$ana-renk : purple;\r\n\r\nbody{\r\n    background-color:$ana-renk;\r\n}"]}

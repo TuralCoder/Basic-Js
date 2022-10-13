@@ -1,0 +1,47 @@
+$sayi : 20;
+
+p {
+    @if $sayi < 10 {
+        background-color: red;
+    }
+
+    @else if $sayi==10 {
+        background-color: blue;
+    }
+
+    @else {
+        background-color: yellow;
+    }
+
+    @if $sayi>10 {
+
+        @if $sayi < 30 {
+            color: teal;
+        }
+
+        @else {
+            color: purple;
+        }
+    }
+}
+
+$sayac : 1;
+
+@for $i from 10 through 15{
+    .list-#{$i}{
+        width:2px * $i;
+    }
+}
+
+@each $deger in (normal, bold, italic){
+    .#{$deger}{
+        font-weight: $deger;
+    }
+}
+
+@while $sayac < 4 {
+     .item-#{$sayac}{
+         color:lighten(red, 10*$sayac);
+         $sayac : $sayac + 1; 
+     }
+}

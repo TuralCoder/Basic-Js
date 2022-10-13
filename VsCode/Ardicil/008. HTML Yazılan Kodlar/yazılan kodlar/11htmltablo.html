@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        caption{
+            font-size:32px;
+        }
+
+        table , #tablo1 td, #tablo1 th{
+            border: 2px solid blue;
+            border-collapse:collapse;
+        }
+        table , #tablo2 td, #tablo2 th{
+            border: 2px solid red;
+            border-collapse:collapse;
+        }
+        #tablo1 tr:nth-child(even) {
+              background-color: teal;
+        }
+        #tablo1 tr:nth-child(odd) {
+              background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="tablo1" style="width:100%">
+        <caption>
+            Deneme Tablosu
+        </caption>
+        <tr>
+            <th>
+                Isim
+            </th>
+            <th>
+                Soyisim
+            </th>
+            <th>
+                Yaş
+            </th>
+            <th colspan="2">Adres</th>
+            <th>Resim</th>
+        </tr>
+        <tr>
+            <td >
+                Emre
+            </td>
+            <td>
+                Altunbilek
+            </td>
+            <td>
+                32
+            </td>
+            <td>
+                Ankara
+            </td>
+            <td>
+                Bursa
+            </td>
+            <td>
+                <img src="img/workplace.jpg" alt="" style="width:50px; height: 50px;">
+            </td>
+        </tr>
+
+        <tr>
+            <td >
+                Emre
+            </td>
+            <td>
+                Altunbilek
+            </td>
+            <td>
+                32
+            </td>
+            <td>
+                Ankara
+            </td>
+            <td>
+                Bursa
+            </td>
+            <td>
+                <img src="img/workplace.jpg" alt="" style="width:50px; height: 50px;">
+            </td>
+        </tr>
+
+        <tr>
+            <td >
+                Emre
+            </td>
+            <td>
+                Altunbilek
+            </td>
+            <td>
+                32
+            </td>
+            <td>
+                Ankara
+            </td>
+            <td>
+                Bursa
+            </td>
+            <td>
+                <img src="img/workplace.jpg" alt="" style="width:50px; height: 50px;">
+            </td>
+        </tr>
+    </table>
+<br><br>
+    <table id="tablo2" style="width:100%">
+        <caption>
+            Isımler Numaralar Tablosu
+        </caption>
+        <tr>
+          <th>Ad:</th>
+          <td>Emre Altunbilek</td>
+        </tr>
+        <tr>
+          <th rowspan="3">Telefon:</th>
+          <td>123456</td>
+        </tr>
+        <tr>
+          <td>2342342343243</td>
+        </tr>
+        <tr>
+            <td>2342sdfdsfsd342343243</td>
+          </tr>
+      </table>
+
+</body>
+
+</html>

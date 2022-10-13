@@ -1,0 +1,33 @@
+@mixin menu-buton($bg:red, $renk:black){
+    a{
+        background-color: $bg;
+        color:white;
+        margin:5px;
+        &:hover{
+            color:$renk;
+        }
+    }
+    
+}
+
+@mixin text-icerik($renk){
+    .test{
+        color:$renk;
+        @content;
+    }
+}
+
+@include text-icerik(brown){
+    background-color: purple;
+    font-size:64px;
+    border:1px solid yellow;
+}
+
+ul{
+    list-style:none;
+}
+.navbar{
+     li{
+         @include menu-buton(orange, yellow);
+     } 
+}

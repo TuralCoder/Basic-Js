@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h3>Merhabalar</h3>
+    <%- include('_header') %> 
+    <h4><%= ad  %> </h4>
+    <h4><%= renkler  %> </h4>
+    <h4><%= kisiler[0].ad  %> <%= kisiler[0].id   %> </h4>
+   
+    <h4><%= kisiler[1].ad  %> <%= kisiler[1].id %>  </h4>
+    <ul><% renkler.forEach(renk => { %>
+     <li><%= renk  %> </li>
+    <% }) %></ul>
+
+    <h4><% if (kisiler[0].ad === 'emre2') { %>
+        emreymiş
+    <% } else { %>
+        değilmiş
+    <% } %> 
+ 
+</h4>
+
+<%- include ('_footer',{veri:'emr2222'}) %> 
+</body>
+</html>

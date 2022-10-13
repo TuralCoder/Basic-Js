@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element ve Sınıflar</title>
+    <style>
+        p::first-letter{
+            font-size:6rem;
+        }
+        p:first-line{
+            background-color: red;
+        }
+        p::selection{
+            background-color: blue;
+            color:purple;
+        }
+        .box{
+            width:100px;
+            height: 100px;
+            background-color:red;
+           
+        }
+        .box::before{
+            display:block;
+            width:20px;
+            height:20px;
+            background-color: yellow;
+            content: ' ';
+        }
+
+        .box::after{
+            display:block;
+            width:20px;
+            height:20px;
+            background-color: blue;
+            content: ' ';
+        }
+    </style>
+</head>
+<body>
+    <!-- elementler :: ile sınıflar : ile belirtilir -->
+
+ 
+    <div class="box">
+        EMRE
+    </div>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae natus eos pariatur nesciunt, alias fuga fugiat hic, accusamus quam similique repellat eveniet maiores rerum placeat cum voluptates. Provident animi laboriosam sit, rerum at doloribus non. Quaerat, unde. Quam odio accusantium cum veritatis beatae numquam, possimus molestiae assumenda? Molestiae, consequuntur provident.</p>
+</body>
+</html>

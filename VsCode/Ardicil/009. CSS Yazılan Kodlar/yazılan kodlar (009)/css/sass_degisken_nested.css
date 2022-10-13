@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/*bu yorum gözükecek*/
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 10px 10px 0px 5px;
+}
+
+.p1 {
+  font-size: 2rem;
+  color: #ccc;
+  border: 2px solid red;
+}
+
+.main-content .p2 {
+  color: red;
+}
+
+a {
+  font-size: 2rem;
+}
+
+a:hover {
+  color: #e57373;
+}
+
+.p2 {
+  color: purple;
+}
+
+.p3 {
+  color: #b71c1c;
+}
+
+.p4 {
+  text-align: left;
+  text-transform: uppercase;
+  text-overflow: hidden;
+  font-family: Georgia;
+  font-size: 3rem;
+  font-font-weight: bold;
+}
+/*# sourceMappingURL=sass_degisken_nested.css.map */

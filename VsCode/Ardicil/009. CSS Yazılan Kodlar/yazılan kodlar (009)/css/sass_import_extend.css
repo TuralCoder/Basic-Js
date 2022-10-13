@@ -1,0 +1,17 @@
+body {
+  background-color: yellow;
+}
+
+.menu-button, .submit-button {
+  border-radius: 2px;
+  margin: 5px;
+}
+
+.menu-button, .submit-button {
+  color: purple;
+}
+
+.submit-button {
+  font-size: 1rem;
+}
+/*# sourceMappingURL=sass_import_extend.css.map */

@@ -1,0 +1,56 @@
+$buyuk-font: 2rem;
+$ana-renk : #ccc;
+$yardimci-renk: orange;
+$kirimizi-border : 2px solid red;
+$body-font : Helvetica, Arial, sans-serif;
+$body-margin: 10px 10px 0px 5px;
+$red-map: (light: #e57373, medium: #f44336, dark: #b71c1c);
+
+//bu bir paragraf yorumu
+/*bu yorum gözükecek*/
+body{
+    font-family:$body-font;
+    margin: $body-margin;
+}
+.p1{
+    font-size: $buyuk-font;
+    color:$ana-renk;
+    border:$kirimizi-border;
+}
+
+.main {
+    &-content{
+        .p2{
+            color:red;
+        }   
+    }
+}
+a{
+    font-size:$buyuk-font;
+    &:hover{
+        color:map-get($red-map, light);
+    }
+}
+
+
+.p2{
+    $yardimci-renk:purple;
+    color:$yardimci-renk;
+}
+.p3{
+    color:map-get($red-map , dark);
+}
+
+.p4{
+    text:{
+        align: left;
+        transform: uppercase;
+        overflow: hidden;
+    }
+    font:{
+        family:Georgia;
+        size:3rem;
+        font-weight: bold;
+    }
+}
+

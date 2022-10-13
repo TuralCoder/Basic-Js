@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJS Index</title>
+</head>
+<body>
+    <%- include('_header')  %> 
+    <h1>EJS Dersleri</h1>
+    <h2> <%= yas %> </h2>
+    <h2> <%= ders %> </h2>
+    <h2> <%= renkler %> </h2>
+    <h2> <%- renkler %> </h2>
+
+    <%- site  %> 
+
+   <h3> ad: <%= kisiler[0].ad  %> id: <%= kisiler[0].id %> </h3>
+   <h3> ad: <%= kisiler[1].ad  %> id: <%= kisiler[1].id %> </h3>
+
+   <% kisiler.forEach(kisi => { %>
+     <h3>  <%= kisi.ad %>      <%= kisi.id %> </h3>
+   <% }) %>
+
+
+   <ul>
+   <% kisiler.forEach(kisi => { %>
+    <li><%= kisi.ad %> id: <%=kisi.id  %>  </li>
+   <% }) %>
+</ul>
+
+
+<ul>
+<% for( let index = 0; index < kisiler.length; index++ ) { %>
+ <li><%= kisiler[index].ad  %> id: <%= kisiler[index].id  %>  </li>
+<% } %>
+</ul>
+
+<% if (yas<30) { %>
+    <h1>Yaş 30dan küçükmüş</h1>
+<% } else { %>
+    <h1>Yaş 30dan büyükmüş</h1>
+<% } %> 
+
+<%- include('_footer',{site:'emrealtunbilek.com'})  %> 
+ 
+
+</body>
+</html>

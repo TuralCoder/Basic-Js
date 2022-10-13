@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Kullanımı</title>
+</head>
+<style>
+    .container {
+       height: 400px;
+       background-color: #ccc;
+       border: 1px solid black;
+       display: inline-flex;
+       flex-direction: row;
+       
+    }
+
+    .item {
+        width: 200px;
+        min-height: 100px;
+        background-color: orange;
+        border: 1px solid black;
+        margin:10px;
+    }
+
+    .item1 {
+         flex-grow: 0; 
+        flex-shrink: 0;
+        flex-basis: 0;
+        flex:1 0 0;
+        align-self: flex-start;
+    }
+
+    .item2 {
+        /* flex-grow: 1; */
+
+        flex-shrink: 5;
+        align-self: center;
+    }
+
+    .item3 {
+       /* flex-grow: 2; */
+      align-self: flex-end;
+       flex-shrink: 3;
+    }
+   
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        
+    </div>
+    <a href="">asdasdasd</a>
+</body>
+
+</html>

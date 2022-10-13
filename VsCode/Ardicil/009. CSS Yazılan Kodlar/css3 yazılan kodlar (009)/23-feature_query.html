@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: blue;
+            font-size: 2rem;
+            color:red;
+        }
+
+        @supports (background-color:revert) and (background-color:red){
+            .div{
+            background-color: revert;
+        }
+        }
+
+        @supports not (background-color:revert){
+            .div{
+            background-color: green;
+        }
+        }
+      
+        
+    </style>
+</head>
+<body>
+    <div class="div">My Div Element</div>
+</body>
+</html>
